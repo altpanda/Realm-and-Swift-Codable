@@ -37,7 +37,7 @@ class VendorsList : Object, Decodable {
     @objc dynamic var name : String?
     @objc dynamic var logo : String?
     // Create your Realm List.
-    var kitchensList = List<VendorKitchens>()
+    let kitchensList = List<VendorKitchens>()
     
     override class func primaryKey() -> String? {
         return "id"
